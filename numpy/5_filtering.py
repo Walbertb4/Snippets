@@ -33,6 +33,18 @@ ages= np.array([[10,22,18,89,11,24,13,25],
                 [30,33,35,47,49,12,32,34]])
 
 print(ages[ages>=30]) # => [89 30 33 35 47 49 32 34]
+
 teenagers= ages[ages<18]
+adults= ages[(ages>=18) & (ages<65)]
 print(teenagers) # => [10 11 13 12]
+print(adults) # => [22 18 24 25 30 33 35 47 49 32 34]
+
+evens= ages[ages % 2 == 0]
+print(evens) # => [10 22 18 24 30 12 32 34]
+
+#where fonskliyonu orjinal shape'i korur ve uymayan verileri 3. kısıma yazdığımız veriyle değiştirir.
+seniors= np.where(ages >= 25, ages, 0)
+print(seniors)
+'''[[ 0  0  0 89  0  0  0 25]
+    [30 33 35 47 49  0 32 34]]'''
 
