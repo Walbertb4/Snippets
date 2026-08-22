@@ -59,6 +59,7 @@ rng.shuffle(array)
 print(array)
 
 #array içinden rastgele eleman seçer
+array= np.array([1,2,3,4,5])
 rng= np.random.default_rng()
 print(rng.choice(array))
 print(rng.choice(array, size=3)) # 3 rastgele seçim yapar

@@ -51,5 +51,3 @@
 # np.vstack((x, y)) -> Vertical Stack (Dikey/Alt alta birleştirme)
 # np.hstack((x, y)) -> Horizontal Stack (Yatay/Yan yana birleştirme)
 # ==========================================
-
-import numpy as np
