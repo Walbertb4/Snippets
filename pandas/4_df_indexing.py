@@ -123,8 +123,6 @@ df["column 5"] = df["column 1"] + df["column 3"]
 print(df)
 
 # Sütun silme
-df.drop("column 5", axis = 1, inplace = True)
-print(df)
-
-df.drop("A",axis=0)
+result=df.drop("column 5", axis = 1) # Sadece result üstünde silinir df etkilenmez.
+df.drop("column 5", axis = 1, inplace = True) # inplace=True olursa orjinal listede güncelleme yapar.
 print(df)
